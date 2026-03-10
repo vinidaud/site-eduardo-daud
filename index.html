@@ -461,6 +461,36 @@
     .d4 { transition-delay: .4s; }
     .d5 { transition-delay: .5s; }
 
+    /* ── WHATSAPP CTA BLOCK ── */
+    .wa-cta-block {
+      display: flex; align-items: stretch;
+    }
+    .wa-cta-inner {
+      background: var(--navy); padding: 56px 48px;
+      display: flex; flex-direction: column; align-items: flex-start; gap: 16px;
+      width: 100%;
+    }
+    .wa-cta-icon svg {
+      width: 48px; height: 48px; fill: #25d366;
+    }
+    .wa-cta-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem; font-weight: 300; color: var(--white); line-height: 1.2;
+    }
+    .wa-cta-sub {
+      font-size: .93rem; color: rgba(255,255,255,.6); line-height: 1.7; max-width: 360px;
+    }
+    .btn-wa-big {
+      display: inline-flex; align-items: center; gap: 12px;
+      background: #25d366; color: var(--white);
+      padding: 16px 32px; margin-top: 8px;
+      font-size: .82rem; font-weight: 500; letter-spacing: .12em;
+      text-transform: uppercase; text-decoration: none;
+      transition: background .3s, transform .2s;
+    }
+    .btn-wa-big:hover { background: #1fba58; transform: translateY(-1px); }
+    .wa-cta-note { font-size: .72rem; color: rgba(255,255,255,.35); letter-spacing: .05em; }
+
     /* ── MOBILE NAV TOGGLE ── */
     .nav-mobile-cta {
       display: none;
@@ -472,7 +502,7 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
-      nav, nav.scrolled { padding: 16px 24px; }
+      nav, nav.scrolled { padding: 16px 24px; background: rgba(245,240,232,.97); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--border); }
       .nav-links { display: none; }
       .nav-mobile-cta { display: inline-block; }
 
@@ -523,8 +553,8 @@
     }
     @media (max-width: 640px) {
       .spec-grid { grid-template-columns: 1fr; }
-      .form-row { grid-template-columns: 1fr; }
       .footer-nav { flex-direction: column; gap: 28px; }
+      .wa-cta-inner { padding: 40px 28px; }
       .hero-right { height: 75vw; max-height: 65vh; }
       .section-head h2 { font-size: 2.2rem; }
     }
@@ -563,7 +593,7 @@
     </div>
     <div class="hero-stats reveal d5">
       <div class="stat-mini">
-        <span class="stat-mini-num">20<sup>+</sup></span>
+        <span class="stat-mini-num">40<sup>+</sup></span>
         <span class="stat-mini-label">Anos de Experiência</span>
       </div>
       <div class="stat-mini">
@@ -571,8 +601,8 @@
         <span class="stat-mini-label">Cirurgias Realizadas</span>
       </div>
       <div class="stat-mini">
-        <span class="stat-mini-num">SBCP</span>
-        <span class="stat-mini-label">Membro Titular</span>
+        <span class="stat-mini-num">USP</span>
+        <span class="stat-mini-label">Doutor pela USP</span>
       </div>
     </div>
   </div>
@@ -587,34 +617,35 @@
 <section id="sobre">
   <div class="sobre-left reveal-l">
     <div class="eyebrow">Sobre o Médico</div>
-    <h2>Expertise que <em>Transforma.</em><br>Cuidado que Persiste.</h2>
+    <h2>Mais de quatro décadas de <em>excelência</em> em cirurgia plástica</h2>
     <p>
-      O Dr. Eduardo Daud é cirurgião plástico com formação de excelência e vasta
-      experiência em procedimentos estéticos e reconstrutivos. Membro titular da
-      Sociedade Brasileira de Cirurgia Plástica (SBCP), alia conhecimento técnico
-      aprofundado a uma abordagem humanizada e individualizada.
+      O Dr. Eduardo Dib Daud se formou em Medicina pela Faculdade de Medicina da Fundação do ABC em 1980
+      e concluiu o Doutorado em Clínica Cirúrgica pela Universidade de São Paulo em 1997.
+      Realizou o programa de Research Fellow na University of Alabama at Birmingham (EUA),
+      sob orientação de referências mundiais da cirurgia plástica.
     </p>
     <p>
-      Cada paciente é recebido com escuta atenta e um plano personalizado,
-      sempre priorizando resultados naturais, seguros e harmoniosos com a
-      identidade de cada pessoa.
+      É Professor Assistente da Disciplina de Cirurgia Plástica da Faculdade de Medicina do ABC,
+      Membro Titular da SBCP (Sociedade Brasileira de Cirurgia Plástica) e da FILACP
+      (Federação Ibero-Latino-Americana de Cirurgia Plástica). Atuou como National Assistant Secretary
+      da ISAPS (Sociedade Internacional de Cirurgia Plástica Estética e Reconstrutiva).
     </p>
     <div class="cred-grid">
       <div class="cred-badge">
         <div class="cred-badge-title">SBCP</div>
-        <div class="cred-badge-sub">Membro Titular</div>
+        <div class="cred-badge-sub">Sociedade Brasileira de Cirurgia Plástica — Membro Titular</div>
       </div>
       <div class="cred-badge">
-        <div class="cred-badge-title">CFM</div>
-        <div class="cred-badge-sub">Registro Ativo</div>
+        <div class="cred-badge-title">Doutorado USP</div>
+        <div class="cred-badge-sub">Universidade de São Paulo — 1997</div>
       </div>
       <div class="cred-badge">
-        <div class="cred-badge-title">Residência</div>
-        <div class="cred-badge-sub">Hospital Especializado</div>
+        <div class="cred-badge-title">FILACP</div>
+        <div class="cred-badge-sub">Federação Ibero-Latino-Americana — Membro Titular</div>
       </div>
       <div class="cred-badge">
-        <div class="cred-badge-title">Especialista</div>
-        <div class="cred-badge-sub">Cirurgia Plástica</div>
+        <div class="cred-badge-title">Research Fellow</div>
+        <div class="cred-badge-sub">University of Alabama at Birmingham (EUA)</div>
       </div>
     </div>
   </div>
@@ -624,7 +655,7 @@
         Cada procedimento é uma obra única. Meu compromisso é com o seu bem-estar
         e com resultados que duram para sempre.
       </blockquote>
-      <p class="quote-attr">— Dr. Eduardo Daud</p>
+      <p class="quote-attr">Dr. Eduardo Daud</p>
     </div>
   </div>
 </section>
@@ -675,7 +706,7 @@
   <div class="filosofia-inner">
     <div class="eyebrow-light reveal">Filosofia</div>
     <p class="filo-quote reveal d1">
-      "Beleza é equilíbrio. Cada intervenção deve revelar quem você já é — nunca apagar."
+      "Beleza é equilíbrio. Cada intervenção deve revelar quem você já é, nunca apagar."
     </p>
     <p class="filo-text reveal d2">
       O Dr. Eduardo Daud acredita que a cirurgia plástica vai além da estética: é uma
@@ -686,7 +717,7 @@
     <div class="principles">
       <div class="principle reveal d1">
         <h4 class="principle-title">Naturalidade Acima de Tudo</h4>
-        <p class="principle-text">Resultados que se integram à sua fisionomia, sem artificialidade ou exageros. O melhor resultado é aquele que ninguém percebe — exceto você.</p>
+        <p class="principle-text">Resultados que se integram à sua fisionomia, sem artificialidade ou exageros. O melhor resultado é aquele que ninguém percebe, exceto você.</p>
       </div>
       <div class="principle reveal d2">
         <h4 class="principle-title">Segurança como Pilar</h4>
@@ -704,7 +735,7 @@
 <section id="numeros">
   <div class="nums-grid">
     <div class="num-card reveal d1">
-      <div class="num-val">20<sup>+</sup></div>
+      <div class="num-val">40<sup>+</sup></div>
       <div class="num-label">Anos de Experiência</div>
     </div>
     <div class="num-card reveal d2">
@@ -712,12 +743,12 @@
       <div class="num-label">Cirurgias Realizadas</div>
     </div>
     <div class="num-card reveal d3">
-      <div class="num-val">15<sup>+</sup></div>
-      <div class="num-label">Procedimentos Especializados</div>
+      <div class="num-val">1997</div>
+      <div class="num-label">Doutor pela USP</div>
     </div>
     <div class="num-card reveal d4">
-      <div class="num-val">SBCP</div>
-      <div class="num-label">Membro Titular</div>
+      <div class="num-val">ISAPS</div>
+      <div class="num-label">Secretário Internacional</div>
     </div>
   </div>
 </section>
@@ -780,40 +811,19 @@
       </div>
     </div>
   </div>
-  <form class="form reveal-r">
-    <div class="form-row">
-      <div class="form-group">
-        <label>Nome</label>
-        <input type="text" placeholder="Seu nome completo">
+  <div class="wa-cta-block reveal-r">
+    <div class="wa-cta-inner">
+      <div class="wa-cta-icon">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       </div>
-      <div class="form-group">
-        <label>Telefone</label>
-        <input type="tel" placeholder="(11) 99999-9999">
-      </div>
+      <p class="wa-cta-title">Agende pelo WhatsApp</p>
+      <p class="wa-cta-sub">Atendimento rápido e personalizado. Tire suas dúvidas antes de marcar a consulta.</p>
+      <a href="https://api.whatsapp.com/send?phone=5511943156500" target="_blank" rel="noopener" class="btn-wa-big">
+        Falar pelo WhatsApp
+      </a>
+      <p class="wa-cta-note">Respondemos em até 24 horas nos dias úteis</p>
     </div>
-    <div class="form-group">
-      <label>E-mail</label>
-      <input type="email" placeholder="seu@email.com">
-    </div>
-    <div class="form-group">
-      <label>Procedimento de Interesse</label>
-      <select>
-        <option value="">Selecione um procedimento</option>
-        <option>Rinoplastia</option>
-        <option>Mamoplastia</option>
-        <option>Lipoaspiração</option>
-        <option>Abdominoplastia</option>
-        <option>Lifting Facial</option>
-        <option>Blefaroplastia</option>
-        <option>Outro</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label>Mensagem</label>
-      <textarea placeholder="Conte-nos um pouco sobre o que você está buscando..."></textarea>
-    </div>
-    <button type="submit" class="btn-submit">Enviar Mensagem</button>
-  </form>
+  </div>
 </section>
 
 <!-- FOOTER -->
@@ -846,7 +856,7 @@
         <h4>Contato</h4>
         <ul>
           <li><a href="#contato">Agendar Consulta</a></li>
-          <li><a href="tel:+5511999999999">WhatsApp</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=5511943156500" target="_blank">WhatsApp</a></li>
           <li><a href="mailto:contato@dreduardodaud.com.br">E-mail</a></li>
         </ul>
       </div>
@@ -854,12 +864,12 @@
   </div>
   <div class="footer-bottom">
     <p class="footer-copy">© 2025 Dr. Eduardo Daud. Todos os direitos reservados.</p>
-    <p class="footer-sbcp">Membro Titular SBCP</p>
+    <p class="footer-sbcp">Membro Titular SBCP — Sociedade Brasileira de Cirurgia Plástica</p>
   </div>
 </footer>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/5511999999999" class="wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+<a href="https://api.whatsapp.com/send?phone=5511943156500" class="wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
